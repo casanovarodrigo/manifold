@@ -1,0 +1,7 @@
+{
+    "name": "Grupos de permissão",
+    "alias": "core/role",
+    "routerFiles": [
+        { "path": "roles", "fileName": "rolesRoute", "menuName": "Permissões" }
+    ]
+}

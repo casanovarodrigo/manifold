@@ -1,0 +1,8 @@
+{
+    "name": "Usuários",
+    "alias": "core/user",
+    "routerFiles": [
+        { "path": "users", "fileName": "usersRoute", "menuName": "Usuários" },
+        { "path": "invitations", "fileName": "invitationsRoute", "menuName": "Convites" }
+    ]
+}

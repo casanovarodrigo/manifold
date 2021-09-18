@@ -1,0 +1,35 @@
+{
+    "name": "casanova/manifold",
+    "description": "A custom CMS made by Casanova R.",
+    "type": "project",
+    "require": {
+        "php": "^7.2.5",
+        "firebase/php-jwt": "^5.2",
+        "laravel/framework": "^7.0"
+    },
+    "require-dev": {
+        "facade/ignition": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Casanova\\Manifold\\Api\\": "src/api"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rodrigo Casanova",
+            "email": "rodrigocasanovasv@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Casanova\\Manifold\\Api\\Core\\Providers\\CoreServiceProvider",
+                "Casanova\\Manifold\\Api\\Core\\Providers\\ResponseServiceProvider",
+                "Casanova\\Manifold\\Api\\Core\\Providers\\RSAServiceProvider",
+                "Casanova\\Manifold\\Api\\Core\\Providers\\JWTServiceProvider",
+                "Casanova\\Manifold\\Api\\Core\\Providers\\ClearanceServiceProvider"
+            ]
+        }
+    }
+}
